@@ -1,0 +1,20 @@
+.btn{
+    font-size: $fs-xs;
+    padding: $p-1 $p-4;
+    color: $color-white;
+    border-radius: 32px;
+    @include pad{
+        padding: $p-1 $p-5;
+    }
+}
+.btn_orange{
+    background-color: $color-orange;
+}
+.btn_blue{
+    background-color: $color-blue;
+}
+.btn_white{
+    background-color: $color-white;
+    outline: 1px solid $color-blue;
+    color: $color-blue;
+}

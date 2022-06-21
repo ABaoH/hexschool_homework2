@@ -1,0 +1,92 @@
+@mixin pad{
+    @media(max-width:768px){
+      @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:375px){
+      @content;
+    }
+}
+.container{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.w-25{
+    width: 25%;
+    @include pad{
+        width: 40%;
+    }
+}
+.w-50{
+    width: 50%;
+}
+.w-100{
+    @include pad{
+        width: 100%;
+    }
+}
+
+// flex
+.d-f{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+    @include pad{
+        flex-wrap: wrap;
+    }
+    @include mobile{
+        flex-wrap: nowrap;
+    }
+}
+.fxdc-pc{
+    flex-direction: column;
+}
+.fxdr-pc{
+    flex-direction: row;
+}
+.fxdc-pad{
+    @include pad{
+        flex-direction: column;
+    }
+}
+.fxdc-mo{
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.fxdr-mo{
+    @include mobile{
+        flex-direction: row;
+    }
+}
+.fxdcr-mo{
+    @include pad{
+        flex-direction: column-reverse;
+    }
+}
+.jcc{
+    justify-content: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jcsa{
+    justify-content: space-around;
+}
+.aic{
+    align-items: center;
+}
+.aic-mo{
+    @include pad{
+        align-items: center;
+    }
+}
+
+// margin
+.mb-4{
+    margin-bottom: $m-4;
+}
