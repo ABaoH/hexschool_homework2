@@ -94,9 +94,9 @@ h4{
     }
 }
 .slogan{
-    h1{
-        line-height: 70px;
+    h2{
         padding: $p-1 0 $p-3 0;
+        line-height: 1.5;
     }
     span{
         font-size: $fs-s;
@@ -288,38 +288,28 @@ h4{
 
 // footer
 .footer{
-    position: relative;
-    .footer_bg{
-        img{
-            width: 100%;
-        }
-    }
     .title{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        @include mobile{
-            top: 25%;
-        }
+        background: no-repeat center url("../images/home_footer.svg");
+        background-size: cover;
+        padding-top: 20%;
+        padding-bottom: 2%;
         h2{
             @include pad{
                 font-size: $fs-l;
             }
-        }
+        }    
         a{
             margin-top: $m-3;
             @include pad{
                 margin-top: $m-2;
             }
-        }
-    }
+        }  
+    }    
     .copyright{
         background-color: $color-lightgray;
         padding: $p-3;
-    } 
+    }
 }
-
 
 // backtotop
 .toTop {
