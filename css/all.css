@@ -300,9 +300,9 @@ h4 {
   }
 }
 
-.slogan h1 {
-  line-height: 70px;
+.slogan h2 {
   padding: 8px 0 16px 0;
+  line-height: 1.5;
 }
 .slogan span {
   font-size: 18px;
@@ -498,22 +498,11 @@ h4 {
   padding: 60px 0 0 8px;
 }
 
-.footer {
-  position: relative;
-}
-.footer .footer_bg img {
-  width: 100%;
-}
 .footer .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media (max-width: 375px) {
-  .footer .title {
-    top: 25%;
-  }
+  background: no-repeat center url("../images/home_footer.svg");
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 2%;
 }
 @media (max-width: 768px) {
   .footer .title h2 {
